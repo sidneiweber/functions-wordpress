@@ -119,3 +119,10 @@ function wpmidia_remove_some_menu_items( $menu_order ){
 }
 add_filter( 'menu_order', 'wpmidia_remove_some_menu_items' );
 
+// ALTERAR RODAPÉ
+
+function alt_admin_footer ()
+{
+    echo '<span id="footer-thankyou">Desenvolvido por <a href="http://www.escolasplus.com" target="_blank">Escolas Plus</a></span>';
+}
+add_filter('admin_footer_text', 'alt_admin_footer');
