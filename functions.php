@@ -1,3 +1,4 @@
+<?php
 // Removendo a aba “Opções de Tela”
 
 function wpmidia_remove_screen_options(){
